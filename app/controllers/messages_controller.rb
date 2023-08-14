@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
         def update
             if @message.update(message_params)
-            redirect_to root_path
+            redirect_to message_path
             else
                 render 'edit'
             end
